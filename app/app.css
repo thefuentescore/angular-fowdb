@@ -9,13 +9,29 @@
   font-weight: bold;
 }
 
-.card-info > li {
+.card-info>li {
   display: inline-block;
   vertical-align: top;
   width: 200px;
 }
 
-.card-info > li > span {
+.card-info>li>span {
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.searchers {
+  padding-left: 15px;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.searchers li {
+  float: left;
+  padding-right: 1em;
+  padding-left: 0;
+}
+
+.searchers li div {
+  display: block;
 }
