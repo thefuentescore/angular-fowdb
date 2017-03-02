@@ -2,5 +2,6 @@
 
 // Declare app level module which depends on views, and components
 angular.module('cardDetail', [
-    'ngRoute'
+    'ngRoute',
+    'core.card'
 ]);

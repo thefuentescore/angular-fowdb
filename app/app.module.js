@@ -4,5 +4,6 @@
 angular.module('fowdb', [
   'ngRoute',
   'cardList',
-  'cardDetail'
+  'cardDetail',
+  'core'
 ]);

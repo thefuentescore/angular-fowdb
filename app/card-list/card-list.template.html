@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="row">
-            <div ng-repeat="card in $ctrl.cards | filter:$ctrl.query | filter:$ctrl.search | limitTo:10" class="col-lg-3 col-md-6 col-xs-6 thumb">
+            <div ng-repeat="card in $ctrl.cards | filter:$ctrl.query | filter:$ctrl.search | limitTo:4" class="col-lg-3 col-md-6 col-xs-6 thumb">
                 <a class="thumbnail" href="#!/cards/{{card.code}}">
                     <p>{{card.name}}</p>
                     <p>{{card.text}}</p>
