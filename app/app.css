@@ -15,8 +15,15 @@
   width: 200px;
 }
 
+#texto-carta {
+  display: inline-block;
+  vertical-align: top;
+  width: 40em;
+}
+
 .card-info>li>span {
   font-size: 1.2em;
+  padding-bottom: 1em;
   font-weight: bold;
 }
 

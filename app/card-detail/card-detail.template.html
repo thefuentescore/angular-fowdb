@@ -1,39 +1,42 @@
-<div class="col-md-9">
-    <div class="container">
-        <div class="row">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
             <h1>{{$ctrl.card.name}}</h1>
-            <img ng-src="{{$ctrl.card.thumbnailImage}}" alt="">
-            <ul class="card-info">
-                <li>
-                    <span>Attribute and Text</span>
-                    <dl>
-                        <dt>Attribute</dt>
-                        <dd>{{$ctrl.card.attribute}}</dd>
-                        <dt>Text</dt>
-                        <dd>{{$ctrl.card.text}}</dd>
-                    </dl>
-                </li>
-                <li>
-                    <span>Type and Races</span>
-                    <dl>
-                        <dt>Type</dt>
-                        <dd>{{$ctrl.card.type}}</dd>
-                        <dt>Races</dt>
-                        <dd ng-repeat="race in $ctrl.card.racesOrTraits">
-                            {{$ctrl.card.racesOrTraits}}</dd>
-                    </dl>
-                </li>
-                <li>
-                    <span>Set and Code</span>
-                    <dl>
-                        <dt>Set</dt>
-                        <dd>{{$ctrl.card.set}}</dd>
-                        <dt>Code</dt>
-                        <dd>{{$ctrl.card.code}}</dd>
-                    </dl>
-                </li>
-            </ul>
-
+            <div class="col-md-4">
+                <img ng-src="{{$ctrl.card.thumbnailImage}}" alt="">
+            </div>
+            <div class="col-md-8">
+                <ul class="card-info">
+                    <li id="texto-carta">
+                        <span>Attribute and Text</span>
+                        <dl>
+                            <dt>Attribute</dt>
+                            <dd>{{$ctrl.card.attribute}}</dd>
+                            <dt>Text</dt>
+                            <dd>{{$ctrl.card.text}}</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <span>Type and Races</span>
+                        <dl>
+                            <dt>Type</dt>
+                            <dd>{{$ctrl.card.type}}</dd>
+                            <dt>Races</dt>
+                            <dd ng-repeat="race in $ctrl.card.racesOrTraits">
+                                {{race}}</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <span>Set and Code</span>
+                        <dl>
+                            <dt>Set</dt>
+                            <dd>{{$ctrl.card.set}}</dd>
+                            <dt>Code</dt>
+                            <dd>{{$ctrl.card.code}}</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
