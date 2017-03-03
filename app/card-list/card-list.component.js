@@ -2,8 +2,8 @@ angular.
 module('cardList').
 component('cardList', {
     templateUrl: 'card-list/card-list.template.html',
-    controller: ['cardsFactory',
-        function CardListController(cardsFactory) {
+    controller: ['cardsFactory','$mdSidenav',
+        function CardListController(cardsFactory, $mdSidenav) {
             var self = this;
 
             self.sets = cardsFactory.getSets().then(function (response) {
