@@ -5,17 +5,11 @@ component('cardDetail', {
     controller: ['cardsFactory', '$routeParams',
         function CardDetailController(cardsFactory, $routeParams) {
             var self = this;
-
-            self.cards = cardsFactory.getCards().then(function (response) {
-                self.cards = response.data;
-
-                function findCard(card) {
-                    return card.code === $routeParams.cardId;
+            self.card = cardsFactory.getCard($routeParams.cardId).then(function (response) {
+                    self.card = response.data;
                 }
 
-                self.card = self.cards.find(findCard);
-            });
-
+            );
         }
     ]
 });
