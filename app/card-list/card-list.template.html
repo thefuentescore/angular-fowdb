@@ -51,8 +51,8 @@
                 </div>
             </md-card-content>
         </md-card>
-        <md-grid-list md-cols="4" md-cols-sm="2" md-cols-xs="1" md-row-height="395px" >
-            <md-grid-tile ng-repeat="card in $ctrl.cards | filter:$ctrl.query | filter:$ctrl.searchName | filter:$ctrl.race" md-cols="4">
+        <md-grid-list md-cols="4" md-cols-sm="2" md-cols-xs="1" md-row-height="395px">
+            <md-grid-tile ng-repeat="card in $ctrl.cards | filter:$ctrl.query | filter:$ctrl.searchName | filter:$ctrl.race | limitTo:200" md-cols="4">
                 <a href="#!/cards/{{card.code}}">
                     <img ng-src="{{card.thumbnailImage}}" layout-fill>
                 </a>
