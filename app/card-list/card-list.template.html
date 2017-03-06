@@ -1,12 +1,16 @@
 <div layout="row">
     <md-sidenav md-component-id="left" class="md-sidenav-left" md-is-locked-open="$mdMedia('gt-md')">
         <md-toolbar class="md-theme-indigo">
-            <h1 class="md-toolbar-tools">FOW DATABASE</h1>
+            <h1 class="md-toolbar-tools">Filters:</h1>
         </md-toolbar>
         <md-content layout-padding layout="column">
             <md-input-container>
                 <label>Name</label>
                 <input ng-model="$ctrl.searchName">
+            </md-input-container>
+            <md-input-container>
+                <label>Race</label>
+                <input ng-model="$ctrl.race">
             </md-input-container>
             <md-input-container>
                 <label>Sets</label>
@@ -19,11 +23,38 @@
         </md-content>
     </md-sidenav>
     <md-content flex layout-padding>
-        <md-grid-list md-cols="5" md-gutter="1em" md-row-height="4:3">
-            <md-grid-tile ng-repeat="card in $ctrl.cards | filter:$ctrl.query | filter:$ctrl.searchName">
-                <a class="thumbnail" href="#!/cards/{{card.code}}">
-                    <p>{{card.name}}</p>
-                    <p>{{card.text}}</p>
+        <md-card class="hide-gt-md">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Filters</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <div layout="row">
+                    <md-input-container>
+                        <label>Name</label>
+                        <input ng-model="$ctrl.searchName">
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Race</label>
+                        <input ng-model="$ctrl.race">
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Set</label>
+                        <md-select ng-model="$ctrl.query">
+                            <md-option><em>None</em></md-option>
+                            <md-option ng-repeat="set in $ctrl.sets" ng-value="set">
+                                {{set}}
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+                </div>
+            </md-card-content>
+        </md-card>
+        <md-grid-list md-cols="4" md-cols-sm="2" md-cols-xs="1" md-row-height="395px" >
+            <md-grid-tile ng-repeat="card in $ctrl.cards | filter:$ctrl.query | filter:$ctrl.searchName | filter:$ctrl.race" md-cols="4">
+                <a href="#!/cards/{{card.code}}">
+                    <img ng-src="{{card.thumbnailImage}}" layout-fill>
                 </a>
             </md-grid-tile>
         </md-grid-list>

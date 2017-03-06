@@ -2,7 +2,7 @@ angular.
 module('cardList').
 component('cardList', {
     templateUrl: 'card-list/card-list.template.html',
-    controller: ['cardsFactory','$mdSidenav',
+    controller: ['cardsFactory', '$mdSidenav',
         function CardListController(cardsFactory, $mdSidenav) {
             var self = this;
 

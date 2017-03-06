@@ -8,6 +8,6 @@
     "set": "The Dawn of Valhalla",
     "code": "1-002",
     "rarity": "R",
-    "thumbnailImage": "http://db.fowtcg.us/thumbs/1/002j.jpg",
+    "thumbnailImage": "../assets/img/cards/1/002.jpg",
     "cardImage": "http://db.fowtcg.us/cards/1/002j.jpg"
 }

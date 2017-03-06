@@ -1,41 +1,40 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>{{$ctrl.card.name}}</h1>
-            <div class="col-md-4">
-                <img ng-src="{{$ctrl.card.thumbnailImage}}" alt="">
+<div layout="row" layout-xs="column" layout-align="center" layout-padding>
+    <div class="flex-none">
+        <div class="wrapper">
+            <div class="content">
+                <img style="max-width: 100%;" ng-src="{{$ctrl.card.thumbnailImage}}" alt="{{$ctrl.card.code}}">
             </div>
-            <div class="col-md-8">
-                <ul class="card-info">
-                    <li id="texto-carta">
-                        <span>Attribute and Text</span>
-                        <dl>
-                            <dt>Attribute</dt>
-                            <dd>{{$ctrl.card.attribute}}</dd>
-                            <dt>Text</dt>
-                            <dd>{{$ctrl.card.text}}</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <span>Type and Races</span>
-                        <dl>
-                            <dt>Type</dt>
-                            <dd>{{$ctrl.card.type}}</dd>
-                            <dt>Races</dt>
-                            <dd ng-repeat="race in $ctrl.card.racesOrTraits">
-                                {{race}}</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <span>Set and Code</span>
-                        <dl>
-                            <dt>Set</dt>
-                            <dd>{{$ctrl.card.set}}</dd>
-                            <dt>Code</dt>
-                            <dd>{{$ctrl.card.code}}</dd>
-                        </dl>
-                    </li>
-                </ul>
+        </div>
+    </div>
+    <div class="flex">
+        <div layout="column" class="card-info-list">
+            <div layout="row" class="card-info-line">
+                <div class="card-info-property layout-column flex-none layout-align-center-end">Name:</div>
+                <div class="card-info-value" flex>{{$ctrl.card.name}}</div>
+            </div>
+            <div layout="row" class="card-info-line" ng-if="$ctrl.card.attribute != null">
+                <div class="card-info-property layout-column flex-none layout-align-center-end">Attribute:</div>
+                <div class="card-info-value" flex>{{$ctrl.card.attribute}}</div>
+            </div>
+            <div layout="row" class="card-info-line">
+                <div class="card-info-property layout-column flex-none layout-align-center-end">Type:</div>
+                <div class="card-info-value" flex>{{$ctrl.card.type}}</div>
+            </div>
+            <div layout="row" class="card-info-line" ng-if="$ctrl.card.racesOrTraits.length > 0">
+                <div class="card-info-property layout-column flex-none layout-align-center-end">Race:</div>
+                <div class="card-info-value " flex> <span ng-repeat="race in $ctrl.card.racesOrTraits">{{race + ', '}}</span></div>
+            </div>
+            <div layout="row" class="card-info-line">
+                <div class="card-info-property layout-column flex-none layout-align-center-end"> <span> Text: </span></div>
+                <div class="card-info-value" flex>{{$ctrl.card.text}}</div>
+            </div>
+            <div layout="row" class="card-info-line">
+                <div class="card-info-property layout-column flex-none layout-align-center-end">Set:</div>
+                <div class="card-info-value" flex>{{$ctrl.card.set}}</div>
+            </div>
+            <div layout="row" class="card-info-line">
+                <div class="card-info-property layout-column flex-none layout-align-center-end">Code:</div>
+                <div class="card-info-value" flex>{{$ctrl.card.code}}</div>
             </div>
         </div>
     </div>

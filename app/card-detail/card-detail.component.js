@@ -8,7 +8,6 @@ component('cardDetail', {
             self.card = cardsFactory.getCard($routeParams.cardId).then(function (response) {
                     self.card = response.data;
                 }
-
             );
         }
     ]

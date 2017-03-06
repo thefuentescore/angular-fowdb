@@ -1,18 +1,41 @@
-.card-info {
-  clear: both;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.grid-tile-header {
+  text-decoration: none;
+  align-content: center;
 }
 
-.card-info dt {
-  font-weight: bold;
+.grid-tile-header h3 {
+  text-align: center;
+  color: whitesmoke;
 }
 
-.card-info>li {
-  display: inline-block;
-  vertical-align: top;
-  width: 200px;
+.grid-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-info-list {
+  max-width: 640px;
+}
+
+.card-info-line {
+  padding: 1em;
+}
+
+.card-info-property {
+  background: #3F51B5;
+  color: white;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  padding: 0.38em;
+  min-width: 115px;
+}
+
+.card-info-property span {
+  vertical-align: middle;
+}
+
+.card-info-value {
+  padding-left: 0.3em;
 }
 
 #texto-carta {

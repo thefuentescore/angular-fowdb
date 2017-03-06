@@ -1,0 +1,134 @@
+[
+    {
+        "id": 0,
+        "name": "Origin",
+        "sets": [
+            "S",
+            "1",
+            "2",
+            "3",
+            "CMF",
+            "TAT",
+            "MPR",
+            "MOA",
+            "VIN001",
+            "VS01",
+            "SKL",
+            "TTW",
+            "TMS",
+            "BFA",
+            "VIN002",
+            "SDL1",
+            "SDL2",
+            "SDL3",
+            "SDL4",
+            "SDL5",
+            "CFC",
+            "LEL"
+        ],
+        "banlist": []
+    },
+    {
+        "id": 1,
+        "name": "Wanderer",
+        "sets": [
+            "CMF",
+            "TAT",
+            "MPR",
+            "MOA",
+            "VIN001",
+            "VS01",
+            "SKL",
+            "TTW",
+            "TMS",
+            "BFA",
+            "VIN002",
+            "SDL1",
+            "SDL2",
+            "SDL3",
+            "SDL4",
+            "SDL5",
+            "CFC",
+            "LEL"
+        ],
+        "banlist": [
+            "Reflect, Child of Potential",
+            "Refrain, Child of Convergence",
+            "Laevateinn, the Demon Sword",
+            "Ruler's Memoria",
+            "Whisper from the Abyss",
+            "Seer of the Blue Moon",
+            "Kaguya, Princess of the Moon",
+            "Tell a Fairy Tale"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "New Frontiers",
+        "sets": [
+            "VS01",
+            "SKL",
+            "TTW",
+            "TMS",
+            "BFA",
+            "VIN002",
+            "SDL1",
+            "SDL2",
+            "SDL3",
+            "SDL4",
+            "SDL5",
+            "CFC",
+            "LEL"
+        ],
+        "banlist": [
+            "Reflect, Child of Potential",
+            "Refrain, Child of Convergence"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Grimm",
+        "sets": [
+            "CMF",
+            "TAT",
+            "MPR",
+            "MOA",
+            "VIN001"
+        ],
+        "banlist": []
+    },
+    {
+        "id": 4,
+        "name": "Alice",
+        "sets": [
+            "VS01",
+            "SKL",
+            "TTW",
+            "TMS",
+            "BFA",
+            "VIN002"
+        ],
+        "banlist": []
+    },
+    {
+        "id": 5,
+        "name": "Lapis",
+        "sets": [
+            "SDL1",
+            "SDL2",
+            "SDL3",
+            "SDL4",
+            "SDL5",
+            "CFC",
+            "LEL"
+        ],
+        "banlist": []
+    },
+    {
+        "id":6,
+        "name":"Legacy Lost Spoilers",
+        "sets":[
+            "LEL"
+        ]
+    }
+]
