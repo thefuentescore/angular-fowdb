@@ -1,1 +1,13 @@
-{"name":"Apollon, the God of Light","attribute":"Light","type":"J-Ruler","cmc":0,"racesOrTraits":["Deity"],"text":"Target Attack\nEnter: Destroy all [Race:Dragon] and [Race:Demon] cards in all fields.\nContinuous: Your opponent reveals all his card in his or her chant-standby area.","set":"Starter","code":"S-001","rarity":"S","thumbnailImage":"../assets/img/cards/S/001.jpg","cardImage":"http://db.fowtcg.us/cards/s/001j.jpg"}
+{
+    "name": "Apollon, the God of Light",
+    "attribute": "Light",
+    "type": "J-Ruler",
+    "cmc": 0,
+    "racesOrTraits": ["Deity"],
+    "text": "Target Attack\nEnter: Destroy all [Race:Dragon] and [Race:Demon] cards in all fields.\nContinuous: Your opponent reveals all his card in his or her chant-standby area.",
+    "set": "Starter",
+    "code": "S-001",
+    "rarity": "S",
+    "thumbnailImage": "../assets/img/cards/S/001j.jpg",
+    "cardImage": "http://db.fowtcg.us/cards/s/001j.jpg"
+}
