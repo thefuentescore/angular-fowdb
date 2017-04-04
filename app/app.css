@@ -1,14 +1,7 @@
-.grid-tile-header {
-  text-decoration: none;
-  align-content: center;
+.card-grid-element {
+  padding: 1em;
 }
-
-.grid-tile-header h3 {
-  text-align: center;
-  color: whitesmoke;
-}
-
-.grid-image {
+.grid-card-image {
   max-width: 100%;
   height: auto;
 }
